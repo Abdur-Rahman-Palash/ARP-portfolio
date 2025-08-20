@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Abdur Rahman - Web Developer & Designer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Md. Abdur Rahman - Senior Web Developer specializing in responsive website development, PSD template design, and document editing services.">
+    <meta name="keywords" content="web developer, PSD template design, responsive websites, HTML CSS JavaScript, document editing, Bangladesh freelancer">
+    <meta property="og:title" content="Md. Abdur Rahman - Web Developer & Designer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing creative web development and design work">
+    <meta name="twitter:title" content="Md. Abdur Rahman - Web Developer & Designer Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing creative web development and design work">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f8fafc;
+            --accent-color: #10b981;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply border-2 border-[var(--primary-color)] text-[var(--primary-color)] px-6 py-3 rounded-lg font-medium hover:bg-[var(--primary-color)] hover:text-white transition-all duration-200;
+        }
+        
+        .section-padding {
+            @apply py-16 px-4 sm:px-6 lg:px-8;
+        }
+        
+        .card {
+            @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Skills.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+    
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+Shift+C
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || 
+                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+                (e.ctrlKey && e.key === 'u') ||
+                (e.ctrlKey && e.shiftKey && e.key === 'C')) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Clear console periodically with error handling
+        setInterval(function() {
+            try {
+                if (typeof console.clear === 'function') {
+                    console.clear();
+                } else if (typeof console._commandLineAPI !== 'undefined') {
+                    console.API.clear();
+                } else {
+                    console.log('\x1Bc');
+                }
+            } catch (e) {
+                // Silently fail if console clearing is not supported
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
