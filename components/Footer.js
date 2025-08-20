@@ -42,13 +42,13 @@ function Footer() {
             </p>
             <div className="flex space-x-4">
               <button 
-                onClick={() => window.open('https://github.com/abdurrahman', '_blank')}
+                onClick={() => window.open('https://github.com/Abdur-Rahman-Palash', '_blank')}
                 className="w-10 h-10 bg-gray-700 hover:bg-[var(--primary-color)] rounded-lg flex items-center justify-center cursor-pointer transition-colors"
               >
                 <div className="icon-github text-lg"></div>
               </button>
               <button 
-                onClick={() => window.open('https://linkedin.com/in/abdurrahman', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/abdur-rahman-palash-019b96251/', '_blank')}
                 className="w-10 h-10 bg-gray-700 hover:bg-[var(--primary-color)] rounded-lg flex items-center justify-center cursor-pointer transition-colors"
               >
                 <div className="icon-linkedin text-lg"></div>
