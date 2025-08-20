@@ -9,7 +9,7 @@ function Hero() {
                 Hi, I'm <span className="text-yellow-300">Md. Abdur Rahman</span>
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">
-                Senior Web Developer & Designer
+                Junior Web Developer & Designer
               </p>
               <p className="text-lg mb-8 text-blue-100 leading-relaxed">
                 Creative professional specializing in responsive website development, PSD template design, 

@@ -94,7 +94,7 @@ function Projects() {
 
           <div className="mt-12 text-center">
             <a 
-              href="https://github.com/abdurrahman"
+              href="https://github.com/Abdur-Rahman-Palash"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-4 bg-[var(--secondary-color)] px-6 py-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer no-underline"
