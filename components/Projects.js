@@ -7,8 +7,8 @@ function Projects() {
         category: 'Web Development',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop',
-        liveLink: 'https://example-corporate-site.netlify.app',
-        githubLink: 'https://github.com/abdurrahman/corporate-website'
+        liveLink: 'https://crowd-funding-z3us.onrender.com/',
+        githubLink: 'https://arp-portfolio-seven.vercel.app/'
       },
       {
         title: 'PSD Template Creation',
