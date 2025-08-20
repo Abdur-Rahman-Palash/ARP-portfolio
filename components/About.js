@@ -60,10 +60,7 @@ function About() {
                 </div>
               </div>
 
-              <div className="mt-6 pt-6 border-t border-[var(--border-color)]">
-                <h5 className="font-semibold text-[var(--text-primary)] mb-2">Education</h5>
-                <p className="text-[var(--text-secondary)]">HSC - Dinajpur Sangeet Degree College</p>
-              </div>
+              
             </div>
           </div>
         </div>
